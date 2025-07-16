@@ -1,6 +1,6 @@
 # Blog da Martina 📝
 
-Projeto desenvolvido com Django para o curso da Coderhouse.
+Projeto desenvolvido com Django para o curso de Python da Coderhouse.
 
 ## Funcionalidades
 - Cadastro e login de usuários
