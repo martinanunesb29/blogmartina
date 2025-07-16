@@ -1,4 +1,4 @@
-# Blog da Martina 📝
+# Blog da Martina 
 
 Projeto desenvolvido com Django para o curso de Python da Coderhouse.
 
