@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+  <h2>Caixa de Saída</h2>
+  <ul>
+    {% for mensagem in mensagens %}
+      <li>
+        <strong>Para:</strong> {{ mensagem.destinatario.username }} - {{ mensagem.assunto }}
+      </li>
+    {% empty %}
+      <li>Você não enviou mensagens ainda.</li>
+    {% endfor %}
+  </ul>
+  <a href="{% url 'inbox' %}">Voltar para Inbox</a>
+{% endblock %}

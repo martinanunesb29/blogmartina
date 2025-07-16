@@ -1,0 +1,13 @@
+<!-- templates/accounts/profile.html -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Meu Perfil</title>
+</head>
+<body>
+    <h1>Olá, {{ request.user.username }}!</h1>
+    <p>Bem-vindo ao seu perfil.</p>
+    <a href="{% url 'logout' %}">Sair</a>
+</body>
+</html>

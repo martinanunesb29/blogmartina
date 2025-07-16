@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+  <h2>Assunto: {{ mensagem.assunto }}</h2>
+  <p><strong>De:</strong> {{ mensagem.remetente.username }}</p>
+  <p><strong>Para:</strong> {{ mensagem.destinatario.username }}</p>
+  <p>{{ mensagem.conteudo }}</p>
+  <a href="{% url 'responder_mensagem' mensagem.pk %}">Responder</a> |
+  <a href="{% url 'inbox' %}">Voltar para Inbox</a>
+{% endblock %}
